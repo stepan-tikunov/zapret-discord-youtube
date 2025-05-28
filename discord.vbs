@@ -2,7 +2,7 @@ Set shell = CreateObject("WScript.Shell")
 Set fso = CreateObject("Scripting.FileSystemObject")
 
 ' Пути
-projectDir = "C:\zapret-discord\"
+projectDir = fso.GetAbsolutePathName(".")
 binDir = projectDir & "bin\"
 listsDir = projectDir & "lists\"
 

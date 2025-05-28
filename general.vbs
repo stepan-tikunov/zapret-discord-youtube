@@ -2,7 +2,7 @@ Set shell = CreateObject("WScript.Shell")
 Set fso = CreateObject("Scripting.FileSystemObject")
 
 ' Определим текущую директорию скрипта
-scriptPath = "C:\zapret-discord\"
+scriptPath = fso.GetAbsolutePathName(".")
 
 ' Пути к подпапкам
 binPath = scriptPath & "\bin\"
